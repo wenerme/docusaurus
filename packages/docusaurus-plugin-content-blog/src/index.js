@@ -74,6 +74,9 @@ module.exports = function(context, opts) {
           const blogFileName = path.basename(relativeSource);
 
           const fileString = await fs.readFile(source, 'utf-8');
+          if (!fileString.startsWith('--')) {
+            return;
+          }
           const {frontMatter, excerpt} = parse(fileString);
 
           let date;

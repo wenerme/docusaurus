@@ -20,6 +20,9 @@ module.exports = async function processMetadata(
   const filepath = path.join(docsDir, source);
 
   const fileString = await fs.readFile(filepath, 'utf-8');
+  if (!fileString.startsWith('--')) {
+    return null;
+  }
   const {frontMatter: metadata = {}, excerpt} = parse(fileString);
 
   // Default id is the file name.

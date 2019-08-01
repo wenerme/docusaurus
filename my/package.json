@@ -13,8 +13,11 @@
     "@docusaurus/plugin-ideal-image": "^2.0.0-alpha.24",
     "@docusaurus/preset-classic": "^2.0.0-alpha.24",
     "classnames": "^2.2.6",
+    "marked": "^0.7.0",
+    "node-fetch": "^2.6.0",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "unist-util-visit": "^2.0.0"
   },
   "browserslist": {
     "production": [
@@ -29,4 +32,3 @@
     ]
   }
 }
-

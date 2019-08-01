@@ -76,6 +76,9 @@ module.exports = function(context, opts) {
             routeBasePath,
             siteDir,
           );
+          if (metadata) {
+            return;
+          }
           docs[metadata.id] = metadata;
         }),
       );

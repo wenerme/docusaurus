@@ -76,7 +76,7 @@ module.exports = function(context, opts) {
             routeBasePath,
             siteDir,
           );
-          if (metadata) {
+          if (!metadata) {
             return;
           }
           docs[metadata.id] = metadata;
